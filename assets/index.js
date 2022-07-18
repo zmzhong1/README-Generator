@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
+const generateREADME = require('./markdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -70,64 +71,33 @@ const questions = [
     },
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions) 
     .then((response) => {
-        console.log(response)
-        const title = response.title
-        const description = response.description
-        const installation = response.installation
-        const usage = response.usage
-        const contribution = response.contribution
-        const test = response.test
-        let license;
-        if (response.license === "Apache") {
-            license = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-        } else if (response.license === "Eclipse") {
-            license = "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
-        } else if (response.license === "MIT") {
-            license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-        } else {
-            license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-        }
-        const userName = response.userName
-        const email = response.email
+        // console.log(response)
 
-        module.exports = {
-            title,
-            description,
-            installation,
-            usage,
-            contribution,
-            test,
-            license,
-            userName,
-            email,
+        if (response.license === "Apache") {
+            response.license = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        } else if (response.license === "Eclipse") {
+            response.license =  "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
+        } else if (response.license === "MIT") {
+            response.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        } else {
+            response.license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
         }
-        // writeToFile("READ", data)
+
+        const responseInfo = generateREADME(response)
+        writeToFile("READ", responseInfo)
     })
 }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('fileName.md', JSON.stringify(data), (err) => {
-        err ? console.error(err) : console.log('Success!')})
+    fs.writeFile(`${fileName}.md`, data, (err) => {
+        err ? console.error(err) : console.log('Generating READ.md...')})
 }
+
 // Function call to initialize app
 init();
