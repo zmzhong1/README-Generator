@@ -1,15 +1,16 @@
 
-## # asd
+## # edison
 
-## [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
 
-das
+edison is a great man
 
 ## Table of Content
 - [Installation Instructions](#installation)
 - [Usage Information](#usage)
+- [License](#license)
 - [Contribution Guidelines](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -17,23 +18,27 @@ das
 
 ## Installation
 
-dsa
+no installation required
 
 ## Usage
 
-das
+no need to use edison as usage
+
+## License
+
+This project is licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contribution
 
-d
+dont use edison 
 
 ## Tests
 
-asd
+why test him?
 
 ## Questions
 
-[Github Account](https://www.github.com/ss)
+[Github Account](https://www.github.com/edisonrocks)
 
-[For additional questions reach our via my email](mailto:dd)
+[For additional questions reach our via my email](mailto:edison@somewhere.com)
 
