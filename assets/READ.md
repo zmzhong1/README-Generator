@@ -1,11 +1,11 @@
 
-## # edison
+## # Something about cats
 
 ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
 
-edison is a great man
+cats love fishes
 
 ## Table of Content
 - [Installation Instructions](#installation)
@@ -22,7 +22,7 @@ no installation required
 
 ## Usage
 
-no need to use edison as usage
+no usages information provided
 
 ## License
 
@@ -30,15 +30,15 @@ This project is licensed under the [![License: MIT](https://img.shields.io/badge
 
 ## Contribution
 
-dont use edison 
+dont use any contribution here
 
 ## Tests
 
-why test him?
+cats dont like test
 
 ## Questions
 
-[Github Account](https://www.github.com/edisonrocks)
+[Github Account](https://www.github.com/zmzhong1)
 
-[For additional questions reach our via my email](mailto:edison@somewhere.com)
+[For additional questions reach our via my email](mailto:zmzhong1215@gmail.com)
 
